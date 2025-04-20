@@ -1,0 +1,82 @@
+
+*** Running vivado
+    with args -log design_1_top_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_top_0_0.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_top_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.ipdefs/ip_repo_BAK_0_0_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_top_0_0
+Command: synth_design -top design_1_top_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+WARNING: [Vivado_Tcl 4-391] The following IPs are missing output products for Synthesis target. These output products could be required for synthesis, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0.xci
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 205565
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2048.574 ; gain = 403.715 ; free physical = 2924 ; free virtual = 12548
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'v', assumed default net type 'wire' [/home/02-comp-arch-f/Desktop/riscv_single.sv:86]
+INFO: [Synth 8-11241] undeclared symbol 'Negative', assumed default net type 'wire' [/home/02-comp-arch-f/Desktop/riscv_single.sv:86]
+INFO: [Synth 8-11241] undeclared symbol 'Carry', assumed default net type 'wire' [/home/02-comp-arch-f/Desktop/riscv_single.sv:86]
+INFO: [Synth 8-11241] undeclared symbol 'PCSrc', assumed default net type 'wire' [/home/02-comp-arch-f/Desktop/riscv_single.sv:87]
+INFO: [Synth 8-11241] undeclared symbol 'MemStrobe', assumed default net type 'wire' [/home/02-comp-arch-f/Desktop/riscv_single.sv:89]
+INFO: [Synth 8-11241] undeclared symbol 'v', assumed default net type 'wire' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:87]
+INFO: [Synth 8-11241] undeclared symbol 'Negative', assumed default net type 'wire' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:87]
+INFO: [Synth 8-11241] undeclared symbol 'Carry', assumed default net type 'wire' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:87]
+INFO: [Synth 8-11241] undeclared symbol 'PCSrc', assumed default net type 'wire' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:88]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'riscvsingle' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:97]
+INFO: [Synth 8-9937] previous definition of design element 'riscvsingle' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:96]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'controller' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:149]
+INFO: [Synth 8-9937] previous definition of design element 'controller' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:148]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'maindec' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:183]
+INFO: [Synth 8-9937] previous definition of design element 'maindec' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:182]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'aludec' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:218]
+INFO: [Synth 8-9937] previous definition of design element 'aludec' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:217]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'datapath' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:263]
+INFO: [Synth 8-9937] previous definition of design element 'datapath' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:262]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'adder' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:270]
+INFO: [Synth 8-9937] previous definition of design element 'adder' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:269]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'extend' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:292]
+INFO: [Synth 8-9937] previous definition of design element 'extend' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:291]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'loadextend' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:307]
+INFO: [Synth 8-9937] previous definition of design element 'loadextend' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:306]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'store' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:329]
+INFO: [Synth 8-9937] previous definition of design element 'store' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:328]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'flopr' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:340]
+INFO: [Synth 8-9937] previous definition of design element 'flopr' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:339]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'flopenr' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:351]
+INFO: [Synth 8-9937] previous definition of design element 'flopenr' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:350]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'mux2' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:360]
+INFO: [Synth 8-9937] previous definition of design element 'mux2' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:359]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'mux3' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:369]
+INFO: [Synth 8-9937] previous definition of design element 'mux3' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:368]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'mux4' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:378]
+INFO: [Synth 8-9937] previous definition of design element 'mux4' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:377]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'alu' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:454]
+INFO: [Synth 8-9937] previous definition of design element 'alu' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:453]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'regfile' [/home/02-comp-arch-f/comparch_lab2/lab2/lab2/lab2.srcs/sources_1/imports/Desktop/riscv_single.sv:475]
+INFO: [Synth 8-9937] previous definition of design element 'regfile' is here [/home/02-comp-arch-f/Desktop/riscv_single.sv:474]
+ERROR: [Synth 8-439] module 'design_1_top_0_0' not found
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2128.543 ; gain = 483.684 ; free physical = 2832 ; free virtual = 12456
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 1 Warnings, 16 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 14 16:26:25 2025...
